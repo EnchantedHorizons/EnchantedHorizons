@@ -11,8 +11,8 @@
   "manifestType": "minecraftModpack",
   "manifestVersion": 1,
   "name": "Enchanted Horizons",
-  "version": "1.19.2",
-  "author": "MrF1yn",
+  "version": "0.1b",
+  "author": "EnchantedNorizons",
   "files": [
     {
       "projectID": 670986,
@@ -767,6 +767,16 @@
     {
       "projectID": 408481,
       "fileID": 4426186,
+      "required": true
+    },
+    {
+      "projectID": 557076,
+      "fileID": 4141421,
+      "required": true
+    },
+    {
+      "projectID": 482378,
+      "fileID": 4513003,
       "required": true
     }
   ],
