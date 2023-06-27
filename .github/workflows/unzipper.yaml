@@ -8,12 +8,8 @@ jobs:
       contents: write
     steps:
       - uses: actions/checkout@v2
-      - run: filename=$(basename -s .zip modpack.zip)
-      - run: unzip modpack.zip
+      - run: unzip -o modpack.zip
       - run: rm modpack.zip
-      - run: mv $filename temp
-      - run: mv temp/out/modpack.zip .
-      - run: rm -r temp
       - run: git config --local user.email "github-actions@users.noreply.github.com"
       - run: git config --local user.name "github-actions"
       - run: git add .
