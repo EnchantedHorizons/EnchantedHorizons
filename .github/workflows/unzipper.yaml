@@ -1,10 +1,28 @@
-name: learn-github-actions
-run-name: UnZipper By ${{ github.actor }}
-on: [push]
-jobs:
-  unzip:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: montudor/action-zip@v1
-        with:
-          args: unzip -qq modpack.zip    
+name: UnZipper
+run-name: "UnZipper By MrF1yn. Pushed B: ${{ github.actor }}"
+on:
+  push:
+    paths:
+    - 'modpack.zip'
+  workflow_dispatch:
+    jobs:
+      unzip:
+        runs-on: ubuntu-latest
+        permissions:
+          contents: write
+        steps:
+          - uses: actions/checkout@v2
+          - name:
+            run: |
+              rm -r extracted
+              filename=$(basename -s .zip modpack.zip)
+              unzip modpack.zip.zip
+              rm modpack.zip.zip
+              mv $filename temp
+              mv temp/out/modpack.zip .
+              rm -r temp
+              git config --local user.email "github-actions@users.noreply.github.com"
+              git config --local user.name "github-actions"
+              git add .
+              git commit -m "unzip"
+              git push origin main
