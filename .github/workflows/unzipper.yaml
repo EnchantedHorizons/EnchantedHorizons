@@ -16,8 +16,8 @@ on:
             run: |
               rm -r extracted
               filename=$(basename -s .zip modpack.zip)
-              unzip modpack.zip.zip
-              rm modpack.zip.zip
+              unzip modpack.zip
+              rm modpack.zip
               mv $filename temp
               mv temp/out/modpack.zip .
               rm -r temp
