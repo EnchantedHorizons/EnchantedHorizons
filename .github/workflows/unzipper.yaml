@@ -8,7 +8,6 @@ jobs:
       contents: write
     steps:
       - uses: actions/checkout@v2
-      - run: rm -r extracted
       - run: filename=$(basename -s .zip modpack.zip)
       - run: unzip modpack.zip
       - run: rm modpack.zip
