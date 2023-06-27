@@ -4,25 +4,22 @@ on:
   push:
     paths:
     - 'modpack.zip'
-  workflow_dispatch:
-    jobs:
-      unzip:
-        runs-on: ubuntu-latest
-        permissions:
-          contents: write
-        steps:
-          - uses: actions/checkout@v2
-          - name:
-            run: |
-              rm -r extracted
-              filename=$(basename -s .zip modpack.zip)
-              unzip modpack.zip
-              rm modpack.zip
-              mv $filename temp
-              mv temp/out/modpack.zip .
-              rm -r temp
-              git config --local user.email "github-actions@users.noreply.github.com"
-              git config --local user.name "github-actions"
-              git add .
-              git commit -m "unzip"
-              git push origin main
+jobs:
+  unzip:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v2
+      - run: rm -r extracted
+      - run: filename=$(basename -s .zip modpack.zip)
+      - run: unzip modpack.zip
+      - run: rm modpack.zip
+      - run: mv $filename temp
+      - run: mv temp/out/modpack.zip .
+      - run: rm -r temp
+      - run: git config --local user.email "github-actions@users.noreply.github.com"
+      - run: git config --local user.name "github-actions"
+      - run: git add .
+      - run: git commit -m "unzip"
+      - run: git push origin main
