@@ -1,9 +1,6 @@
 name: UnZipper
 run-name: "UnZipper By MrF1yn. Pushed B: ${{ github.actor }}"
-on:
-  push:
-    paths:
-    - 'modpack.zip'
+on: [push]
 jobs:
   unzip:
     runs-on: ubuntu-latest
