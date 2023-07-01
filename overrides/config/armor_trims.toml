@@ -1,0 +1,31 @@
+
+[Client]
+	# Condense item names based on tags in the tooltip of Smithing Templates.
+	"Condense Item Names" = true
+	# For some reason, trim layers don't play nice with custom armor models (and I have given up trying to fix it now). You can choose what to do.
+	# NORMAL - Will attempt to render anyway. Usually trims will be invisible but sometimes yields wierd results (such as "mystery belts" for some boots).
+	# TINTED - Will tint armors the associated trim color.
+	# HIDDEN - Will hide trims on custom armor models entirely. Default option; anything not specified will default to this.
+	"Custom Armor Model View" = "HIDDEN"
+	# Some textures have some dark bits that get factored into the final color. Enable this option to try to remove these dark colors in factorization.
+	"Brighten Trim Colors" = false
+
+["Base Features"]
+	# Basically half the premise of the mod, turn this off if you don't want people trimming armor themselves (E.G. if you have another system on place).
+	"New Smithing Table GUI" = true
+	# Don't consume smithing templates when trimming armor.
+	"Don't Consume Smithing Templates" = false
+	# Disable vanilla netherite upgrading in favor of the new one. NOT recommended to enable this alongside disableNetheriteUpgrade.
+	"Disable Vanilla Netherite Upgrading" = true
+	# Disable netherite upgrading via smithing template. Great if you feel like it takes away from the old vanilla experience. NOT recommended to enable this alongside disableVanillaNetheriteUpgrade.
+	"Disable Netherite Upgrade Smithing Template" = false
+
+	["Base Features".Untrimming]
+		# Decides whether or not the player is allowed to un-trim armor.
+		"Allow Untrimming" = true
+
+	["Base Features"."Armor Trim Materials"]
+		# This is a list of items that can be used to trim armor.
+		# You can add any item/tag here. For example, you could use the item id "minecraft:sponge" for sponge or you could use the tag "#forge:gems/amethyst" for amethyst shards.
+		"Armor Trim Materials" = ["#forge:ingots/gold", "#forge:ingots/iron", "#forge:ingots/copper", "#forge:ingots/netherite", "#forge:gems/emerald", "#forge:gems/amethyst", "#forge:dusts/redstone", "#forge:gems/lapis", "#forge:gems/quartz", "#forge:gems/diamond", "#forge:ingots/manasteel", "#forge:ingots/elementium", "#forge:ingots/terrasteel", "#forge:gems/mana_diamond", "#forge:gems/dragonstone", "#forge:ingots/zinc", "create:polished_rose_quartz"]
+
