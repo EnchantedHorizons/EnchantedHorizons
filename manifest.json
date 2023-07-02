@@ -10,9 +10,9 @@
   },
   "manifestType": "minecraftModpack",
   "manifestVersion": 1,
-  "name": "modpack",
+  "name": "Enchanted Horizons",
   "version": "0.4b",
-  "author": "Krak8",
+  "author": "EnchantedHorizons",
   "files": [
     {
       "projectID": 670986,
@@ -830,13 +830,23 @@
       "required": true
     },
     {
-      "projectID": 245211,
-      "fileID": 3965693,
+      "projectID": 378979,
+      "fileID": 3906414,
       "required": true
     },
     {
-      "projectID": 378979,
-      "fileID": 3906414,
+      "projectID": 615134,
+      "fileID": 4073854,
+      "required": true
+    },
+    {
+      "projectID": 455982,
+      "fileID": 4576229,
+      "required": true
+    },
+    {
+      "projectID": 666621,
+      "fileID": 3960349,
       "required": true
     }
   ],
