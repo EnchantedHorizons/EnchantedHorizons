@@ -11,8 +11,8 @@
   "manifestType": "minecraftModpack",
   "manifestVersion": 1,
   "name": "Enchanted Horizons",
-  "version": "0.1b",
-  "author": "EnchantedNorizons",
+  "version": "0.4b",
+  "author": "EnchantedHorizons",
   "files": [
     {
       "projectID": 670986,
@@ -415,11 +415,6 @@
       "required": true
     },
     {
-      "projectID": 60089,
-      "fileID": 3871353,
-      "required": true
-    },
-    {
       "projectID": 348964,
       "fileID": 4326219,
       "required": true
@@ -777,6 +772,81 @@
     {
       "projectID": 482378,
       "fileID": 4513003,
+      "required": true
+    },
+    {
+      "projectID": 658587,
+      "fileID": 4418149,
+      "required": true
+    },
+    {
+      "projectID": 639842,
+      "fileID": 4534619,
+      "required": true
+    },
+    {
+      "projectID": 456239,
+      "fileID": 4411042,
+      "required": true
+    },
+    {
+      "projectID": 594006,
+      "fileID": 4559054,
+      "required": true
+    },
+    {
+      "projectID": 358578,
+      "fileID": 4303902,
+      "required": true
+    },
+    {
+      "projectID": 241420,
+      "fileID": 3920644,
+      "required": true
+    },
+    {
+      "projectID": 438332,
+      "fileID": 3871792,
+      "required": true
+    },
+    {
+      "projectID": 854949,
+      "fileID": 4621071,
+      "required": true
+    },
+    {
+      "projectID": 454372,
+      "fileID": 4601826,
+      "required": true
+    },
+    {
+      "projectID": 558998,
+      "fileID": 4598520,
+      "required": true
+    },
+    {
+      "projectID": 60089,
+      "fileID": 3871353,
+      "required": true
+    },
+    {
+      "projectID": 378979,
+      "fileID": 3906414,
+      "required": true
+    },
+    {
+      "projectID": 615134,
+      "fileID": 4073854,
+      "required": true
+    },
+    {
+      "projectID": 455982,
+      "fileID": 4576229,
+      "required": true
+    },
+    {
+      "projectID": 666621,
+      "fileID": 3960349,
       "required": true
     }
   ],
