@@ -8,6 +8,8 @@ mod_count = true
 pause_screen_mods_button = "INSERT_BELOW_FEEDBACK_AND_BUGS"
 #Show a small green orb indicating that mod updates are available.
 update_notification = false
-#Force a dirt background to show for the mod list screen, even when inside of a world where it would normally be transparent.
-force_dirt_background = true
+#Safe area in pixels from screen border for buttons to not be moved to prevent them from going off screen.
+#Not effective for vanilla menu layouts, but can be useful when mods add buttons close to the border.
+#Range: > 0
+safe_area = 24
 
