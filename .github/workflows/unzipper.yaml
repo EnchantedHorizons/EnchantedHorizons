@@ -1,6 +1,6 @@
-name: UnZipper
+name: Unarchive and Commit
 run-name: "UnZipper By MrF1yn. Pushed B: ${{ github.actor }}"
-on: [push]
+on: [published]
 jobs:
   unzip:
     runs-on: ubuntu-latest
@@ -8,10 +8,10 @@ jobs:
       contents: write
     steps:
       - uses: actions/checkout@v2
-      - run: unzip -o modpack.zip
-      - run: rm modpack.zip
+      - run: unzip -o *.zip
+      - run: rm *.zip
       - run: git config --local user.email "github-actions@users.noreply.github.com"
       - run: git config --local user.name "github-actions"
       - run: git add .
-      - run: git commit -m "unzip"
+      - run: git commit -m "$commit_message"
       - run: git push origin main
