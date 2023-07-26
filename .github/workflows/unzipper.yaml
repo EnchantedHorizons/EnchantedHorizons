@@ -1,6 +1,6 @@
 name: Unarchive and Commit
 run-name: "UnZipper By MrF1yn. Pushed B: ${{ github.actor }}"
-on: [published]
+on: [push]
 jobs:
   unzip:
     runs-on: ubuntu-latest
