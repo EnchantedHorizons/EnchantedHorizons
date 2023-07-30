@@ -1,5 +1,0 @@
-
-["Configs for Modern Train Parts"]
-	#If wires render offscreen (might worsen performance)
-	render_wires_offscreen = false
-
